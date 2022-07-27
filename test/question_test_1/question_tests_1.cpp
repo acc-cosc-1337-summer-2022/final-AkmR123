@@ -2,11 +2,10 @@
 #include "catch.hpp"
 #include "question1.h"
 
-TEST_CASE("Verify Test Configuration", "verification") {
-	REQUIRE(true == true);
-}
-
-TEST_CASE("test")
+TEST_CASE("test function get_average")
 {
-	REQUIRE(test_config() == true);
+	int SIZE = 5;
+	double numbers[SIZE]{88, 95, 50, 90, 77};
+
+	REQUIRE(get_average(numbers, SIZE) == 80);
 }
