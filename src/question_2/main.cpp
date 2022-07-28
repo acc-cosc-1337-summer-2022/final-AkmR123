@@ -18,12 +18,17 @@ int main()
 
     do 
     {
-
+    do
+    {
     cout << "\nEnter the time: ";
     cin >> time;
+    } while (time < 0 || time > 23);
 
+    do
+    {
     cout << "Enter the amount of exits made: "; 
     cin >> exits;
+    } while (exits < 0);
 
     Toll bill(exits, time); 
     bill.get_amount(); 
